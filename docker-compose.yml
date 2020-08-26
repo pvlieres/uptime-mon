@@ -14,3 +14,5 @@ services:
         - --config.file=/config/blackbox.yml
     volumes:
         - ./blackbox-config.yml:/config/blackbox.yml
+    cap_add:
+        - CAP_NET_RAW
